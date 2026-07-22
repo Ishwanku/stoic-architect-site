@@ -213,6 +213,21 @@
   .card .tag{position:absolute;top:20px;right:20px;font-family:var(--mono);font-size:0.56rem;
     letter-spacing:0.12em;color:var(--ink-faint);border:1px solid var(--line);border-radius:5px;padding:3px 6px;}
 
+  /* full screen map */
+  .screens{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+  @media (max-width:820px){.screens{grid-template-columns:repeat(2,1fr);}}
+  @media (max-width:480px){.screens{grid-template-columns:1fr;}}
+  .scr{display:flex;gap:14px;padding:16px 17px;border-radius:14px;
+    background:var(--film);border:1px solid var(--line-soft);transition:border-color .3s,background .3s,transform .3s;}
+  .scr:hover{border-color:rgba(201,168,76,0.28);background:var(--film-2);transform:translateY(-3px);}
+  .scr .idx{font-family:var(--mono);font-size:0.72rem;color:var(--gold);letter-spacing:0.02em;
+    padding-top:2px;min-width:1.7em;font-variant-numeric:tabular-nums;}
+  .scr .body h4{font-family:var(--sans);font-weight:600;font-size:0.95rem;margin-bottom:5px;
+    display:flex;align-items:baseline;gap:9px;flex-wrap:wrap;letter-spacing:-0.01em;}
+  .scr .body h4 code{font-family:var(--mono);font-size:0.64rem;font-weight:400;color:var(--gold-bright);
+    background:rgba(201,168,76,0.09);border:1px solid rgba(201,168,76,0.18);border-radius:5px;padding:1px 7px;}
+  .scr .body p{font-size:0.81rem;color:var(--ink-dim);line-height:1.5;}
+
   /* milvis strip */
   .milvis{padding:clamp(40px,5vw,58px);display:grid;grid-template-columns:1fr 0.9fr;gap:clamp(34px,4vw,54px);align-items:center;}
   @media (max-width:860px){.milvis{grid-template-columns:1fr;}}
@@ -338,8 +353,8 @@
     <div class="col">
       <div class="sec-head rev">
         <span class="eyebrow">The System</span>
-        <h2>Nine instruments, one discipline.</h2>
-        <p>Fourteen swipe-selectable screens on an Arc Reactor tab bar. These are the ones you live in.</p>
+        <h2>The instruments you live in.</h2>
+        <p>Eight of the surfaces you touch every day &mdash; from the morning protocol to deep work and reflection. The full fourteen-screen map is below.</p>
       </div>
       <div class="grid">
 
@@ -400,6 +415,28 @@
           <p>A curated library and a DSA problem logger that MILVIS can write to on your behalf.</p>
         </article>
 
+      </div>
+
+      <div class="sec-head rev" style="margin-top:clamp(56px,7vw,88px);">
+        <span class="eyebrow">The Full Map</span>
+        <h2>All fourteen screens.</h2>
+        <p>Every screen is a swipe-selectable tab on the Arc Reactor bar &mdash; the centered icon is the active screen; swipe any icon to the center to switch.</p>
+      </div>
+      <div class="screens">
+        <div class="scr rev"><span class="idx">01</span><div class="body"><h4>Today <code>/today</code></h4><p>Daily protocol command center &mdash; Morning, Empire, and Evening blocks with One Thing and live XP.</p></div></div>
+        <div class="scr rev"><span class="idx">02</span><div class="body"><h4>MILVIS <code>/chat</code></h4><p>The AI copilot &mdash; streaming chat, five personas, and tool execution over gRPC.</p></div></div>
+        <div class="scr rev"><span class="idx">03</span><div class="body"><h4>Journal <code>/journal</code></h4><p>Evening reflection &mdash; Execute / Avoid / Carry, four virtue scores, and a weekly letter.</p></div></div>
+        <div class="scr rev"><span class="idx">04</span><div class="body"><h4>Debrief <code>/debrief</code></h4><p>End-of-day structured debrief with a Resistance Map and a Stoic reflection.</p></div></div>
+        <div class="scr rev"><span class="idx">05</span><div class="body"><h4>Tracker <code>/tracker</code></h4><p>Habit grids, XP nodes, streak badges, and a full-year heatmap.</p></div></div>
+        <div class="scr rev"><span class="idx">06</span><div class="body"><h4>Analytics <code>/analytics</code></h4><p>Trends, XP progression, mood correlation, and the MILVIS Oracle deep audit.</p></div></div>
+        <div class="scr rev"><span class="idx">07</span><div class="body"><h4>Sprint <code>/sprint</code></h4><p>Cognitive skill sprints &mdash; focused 14&ndash;21 day windows, one active at a time.</p></div></div>
+        <div class="scr rev"><span class="idx">08</span><div class="body"><h4>Sprint Detail <code>/sprint-detail</code></h4><p>Per-sprint protocol steps, outcome targets, a day grid, and a timestamped log.</p></div></div>
+        <div class="scr rev"><span class="idx">09</span><div class="body"><h4>Workout <code>/workout</code></h4><p>Physical protocol &mdash; a seven-day plan with exercise logging and gym geofencing.</p></div></div>
+        <div class="scr rev"><span class="idx">10</span><div class="body"><h4>Emperor Mode <code>/emperor</code></h4><p>Distraction-free deep-work timer with ambient audio and Ghost Mode focus.</p></div></div>
+        <div class="scr rev"><span class="idx">11</span><div class="body"><h4>Resources <code>/resources</code></h4><p>Curated reference library across Mindset, AI &amp; Systems, DSA, and Spiritual.</p></div></div>
+        <div class="scr rev"><span class="idx">12</span><div class="body"><h4>Resource Log <code>/resource-log</code></h4><p>Log books, articles, and courses with notes &mdash; MILVIS can add entries too.</p></div></div>
+        <div class="scr rev"><span class="idx">13</span><div class="body"><h4>Account <code>/account</code></h4><p>Profile and core skills, gym geofence, Level &amp; XP, and journal export.</p></div></div>
+        <div class="scr rev"><span class="idx">14</span><div class="body"><h4>Settings <code>/settings</code></h4><p>Theme, app branding, protocol tasks, notifications, and data &amp; migration.</p></div></div>
       </div>
     </div>
   </section>
