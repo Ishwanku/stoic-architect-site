@@ -1,28 +1,35 @@
 # The Stoic Architect — Website
 
-Single-page marketing site for **The Stoic Architect**, a personal operating system built with Flutter (**Android** + **Windows**) and a Go gRPC backend (LAN MILVIS).
+Single-page marketing site for **The Stoic Architect** — dual audience:
 
-A self-contained `index.html` (fonts, logo, and styles inlined — no external requests), deployed via GitHub Pages.
+- **Users:** plain-language benefits, day-in-the-life, privacy FAQ  
+- **Investors / diligence:** market wedge, maturity, defensibility, use of capital, tech stack  
+
+Native Flutter (Android + Windows) + optional self-hosted Go MILVIS. Offline-first.
+
+Self-contained `index.html` (fonts, logo, styles inlined).
 
 **Live:** https://ishwanku.github.io/stoic-architect-site/
 
-## What’s on the page
+## Page map
 
-| Section | Content |
-|---------|---------|
-| **Status** | July 2026 readiness: product core, MILVIS tools, privacy defaults, device-QA / deferred TLS |
-| **System** | Highlight cards (protocol, Emperor, MILVIS, journal, sprints, analytics, workout, resources) |
-| **Tabs** | Full map of all **13 dock tabs** + Emperor (fullscreen) + Sprint Detail (drill-in) |
-| **MILVIS** | Validated tool loop, opt-in embeddings, five personas |
-| **Privacy** | Offline-first with honest chat/embedding egress copy |
-| **Glass / Stack** | Themes + Flutter 3.44 / Go gRPC stack |
+| Section | Audience | Content |
+|---------|----------|---------|
+| Hero | Both | Value prop, stats, CTAs |
+| Why | Both | Problem / opportunity |
+| Product | Users + builders | Plain language + architecture card, day journey |
+| Investor brief | Investors | Market, maturity, moat, capital use |
+| Status | Both | Shipped / next / later honesty |
+| Product pillars + screens | Both | Dual labels + full dock map |
+| MILVIS / Privacy / Stack | Both | Trust + tech |
+| FAQ + CTA | Both | Common questions |
 
-## Local preview
+## Preview
 
-Open `index.html` in a browser (file:// works — no build step).
+Open `index.html` in a browser. No build step.
 
 ## Deploy
 
-Push `main` on the site repo (or whatever branch GitHub Pages is configured for). The site is a single HTML file.
+Push the site repo branch configured for GitHub Pages.
 
 © 2026 Ishwanku Saini. All rights reserved.
