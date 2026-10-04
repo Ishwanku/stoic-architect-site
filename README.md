@@ -23,17 +23,18 @@ This is a **personal project**. GitHub may show portfolio source for viewing.
 
 Approved testers receive a private APK / install instructions.
 
-## Status on this site (synced 2026-08)
+## Status on this site (synced 2026-10)
 
 Reflects **app v2.0 Phase 1** from [StoicArchitect-V2](https://github.com/Ishwanku/StoicArchitect-V2):
 
 | Area | On site as |
 |------|------------|
 | First-launch onboarding wizard | Shipped |
-| Daily OS (protocol, journal, sprints, glass UI) | Shipped |
+| Daily OS (protocol, journal, sprints, study, Calm Precision UI) | Shipped |
+| Hosted MILVIS (Cloud Run, TLS, API key) + crash reporting | Shipped |
 | Private test / prerelease builds | **By request only** |
-| Device QA / Play Store / crash reporting | Next (Phase 2) |
-| Public cloud MILVIS + TLS | Later (Phase 3) |
+| Device QA / Play Store | Next (Phase 2) |
+| Multi-user cloud MILVIS | Later (Phase 3) |
 
 ## Page map
 
@@ -44,7 +45,8 @@ Reflects **app v2.0 Phase 1** from [StoicArchitect-V2](https://github.com/Ishwan
 | Product | Users + builders | Benefits, architecture, day journey + onboarding |
 | Investor brief | Investors | Market, maturity, moat, capital use |
 | Status | Both | Shipped / next / later (invite-only binaries) |
-| Product pillars + screens | Both | Dock map + onboarding + Emperor |
+| Product pillars + screens | Both | 5 destinations + onboarding + Emperor |
+| Design | Both | Calm Precision palette (Light / Dark) |
 | MILVIS / Privacy / Stack | Both | Trust + tech |
 | FAQ + CTA | Both | How to request a build, Phase 1 vs later |
 
